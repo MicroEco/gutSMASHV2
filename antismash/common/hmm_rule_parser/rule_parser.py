@@ -715,7 +715,7 @@ class ScoreCondition(Conditions):
         return "{}*{}".format(self.hits, str(self))
 
     def __str__(self) -> str:
-        return "{}minscore({}, {})".format("not " if self.negated else "", self.name, self.score)
+        return "{}minscore({}, {})".format("not " if self.negated else "", self.name, self.s)
 
 
 class DetectionRule:

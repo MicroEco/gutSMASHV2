@@ -1,0 +1,1740 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>btheta - 13 region(s) - gutSMASH results</title>
+  <style>img {width: 20px; height: 20px;}</style>
+  <link rel="stylesheet" type="text/css" href="css/bacteria.css">
+  <meta property="og:title" content="btheta - 1 record(s) - 13 region(s)" />
+  <meta property="og:description" content="">
+  <meta property="og:image" content="https://gutsmash.bioinformatics.nl/images/bacteria_logo.png" />
+  <meta property="og:image:alt" content="antiSMASH logo" />
+  <meta property="og:image:width" content="600" />
+  <meta property="og:image:height" content="600" />
+  <meta property="og:url" content="https://gutsmash.bioinformatics.nl/upload/bthetaV3/index.html" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@antismash_dev" />
+</head>
+
+<body>
+  <div id="header">
+      <nav>
+    <div class="main-link">
+     <div>
+        <a href="https://gutsmash.bioinformatics.nl/">
+          <img src="images/bacteria_antismash_logo.svg" alt="antiSMASH logo" style="width:40px;height:unset;">
+        </a>
+       </div>
+       <div>
+        <a href="https://gutsmash.bioinformatics.nl/">
+          gutSMASH version 1.0.0-1555cd7(changed)
+        </a>
+      </div>
+    </div>
+    <div class="custom-description"></div>
+    <div class="ancillary-links">
+      <div class="ancillary-link dropdown-menu" id="download-dropdown"><a href="#" id="download-dropdown-link"><img src="images/download.svg" alt="download"> &nbsp; Download</a>
+        <ul class="dropdown-options">
+        
+        <li><a href="btheta.zip">Download all results</a></li>
+        
+          <li><a href="btheta.gbk">Download GenBank summary file</a></li>
+        
+        </ul>
+      </div>
+      <div class="ancillary-link"><a href="https://gutsmash.bioinformatics.nl//about"><img src="images/about.svg" alt="about"> &nbsp; About</a></div>
+      <div class="ancillary-link"><a href="https://gutsmash-documentation.readthedocs.io/en/latest/"><img src="images/help.svg" alt="help"> &nbsp; Help</a></div>
+      <div class="ancillary-link"><a href="https://gutsmash.bioinformatics.nl//contact"><img src="images/contact.svg" alt="contact"> &nbsp; Contact</a></div>
+    </div>
+  </nav>
+    <div id="buttons">
+      <span id="region-type">Select genomic region:</span>
+      <div id="regionbuttons">
+        <div class="arrow-left" id="prev-region"></div>
+        <div class="regbutton" style="min-width: inherit;"><a href="#">Overview</a></div>
+        <div style="display: flex; flex-wrap: wrap">
+        
+          
+            
+            
+                
+            
+            <div class="regbutton APS_kinase,Phenylpyruvate_ferredoxin_oxidoreductase,Sulfate_adenylyltransferase hybrid r1c1">
+              <a href="#r1c1">1.1</a>
+            </div>
+          
+            
+            
+            <div class="regbutton Rnf_complex r1c2">
+              <a href="#r1c2">1.2</a>
+            </div>
+          
+            
+            
+            <div class="regbutton Others_HGD_unassigned r1c3">
+              <a href="#r1c3">1.3</a>
+            </div>
+          
+            
+            
+            <div class="regbutton succinate2propionate r1c4">
+              <a href="#r1c4">1.4</a>
+            </div>
+          
+            
+            
+            <div class="regbutton PFOR_II_pathway r1c5">
+              <a href="#r1c5">1.5</a>
+            </div>
+          
+            
+            
+            <div class="regbutton TPP_AA_metabolism r1c6">
+              <a href="#r1c6">1.6</a>
+            </div>
+          
+            
+            
+            <div class="regbutton putative_2-oxoglutarate_ferredoxin_oxidoreductase r1c7">
+              <a href="#r1c7">1.7</a>
+            </div>
+          
+            
+            
+            <div class="regbutton Fumarate2succinate r1c8">
+              <a href="#r1c8">1.8</a>
+            </div>
+          
+            
+            
+            <div class="regbutton acetate2butyrate_but r1c9">
+              <a href="#r1c9">1.9</a>
+            </div>
+          
+            
+            
+            <div class="regbutton ButyrylCoA2butyrate r1c10">
+              <a href="#r1c10">1.10</a>
+            </div>
+          
+            
+            
+            <div class="regbutton NADH_dehydrogenase_I r1c11">
+              <a href="#r1c11">1.11</a>
+            </div>
+          
+            
+            
+            <div class="regbutton TPP_fatty_acids r1c12">
+              <a href="#r1c12">1.12</a>
+            </div>
+          
+            
+            
+            <div class="regbutton Pyruvate2acetate-formate r1c13">
+              <a href="#r1c13">1.13</a>
+            </div>
+          
+        
+        </div>
+        <div id="last-regbutton"><div class="arrow-right" id="next-region"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- overview page -->
+  
+  <div class="page" id="overview">
+   
+     <h3>Identified primary metabolite regions<span id="truncated"></span></h3>
+   
+   <div class="overview-layout">
+    <div id="record-tables">
+     <div id="single-record-tables">
+     <div class="record-overview-header">
+       <strong>NC_004663.1</strong> (Bacteroides thetaiotaomicron VPI-5482)
+      </div>
+      <div class="record-overview-details">
+        <svg id="record-minimap-1" class="record-overview-svg" height="1" width="1"></svg>
+        <table class="region-table">
+ <thead>
+  <tr>
+   <th>Region</th>
+   <th>Type</th>
+   <th>Class</th>
+   <th>From</th>
+   <th>To</th>
+   <th colspan="2">Most similar known cluster</th>
+   <th>Similarity</th>
+  </tr>
+ </thead>
+ <tbody>
+ <tr class="linked-row odd" data-anchor="#r1c1">
+     
+     
+         
+     
+     <td class="regbutton APS_kinase,Phenylpyruvate_ferredoxin_oxidoreductase,Sulfate_adenylyltransferase hybrid r1c1">
+      <a href="#r1c1">Region&nbsp1</a>
+     </td>
+     <td>
+       
+       <a class="external-link" href="https://gutsmash-documentation.readthedocs.io/en/latest/Glossary.html#gene-cluster-types" target="_blank">APS_kinase</a>,<a class="external-link" href="https://gutsmash-documentation.readthedocs.io/en/latest/Glossary.html#gene-cluster-types" target="_blank">Sulfate_adenylyltransferase</a>,<a class="external-link" href="https://gutsmash-documentation.readthedocs.io/en/latest/Glossary.html#gene-cluster-types" target="_blank">Phenylpyruvate_ferredoxin_oxidoreductase</a>
+     </td>
+      <td><a class="external-link" href="https://gutsmash-documentation.readthedocs.io/en/latest/Glossary.html#gene-cluster-classes" target="_blank">Other</a></td>
+     <td class="digits">489,518</td>
+     <td class="digits table-split-left">528,049</td>
+     
+      <td colspan="3"></td>
+     
+   </tr>
+ <tr class="linked-row even" data-anchor="#r1c2">
+     
+     
+     <td class="regbutton Rnf_complex r1c2">
+      <a href="#r1c2">Region&nbsp2</a>
+     </td>
+     <td>
+       
+       <a class="external-link" href="https://gutsmash-documentation.readthedocs.io/en/latest/Glossary.html#gene-cluster-types" target="_blank">Rnf_complex</a>
+     </td>
+      <td><a class="external-link" href="https://gutsmash-documentation.readthedocs.io/en/latest/Glossary.html#gene-cluster-classes" target="_blank">E-MGC</a></td>
+     <td class="digits">752,189</td>
+     <td class="digits table-split-left">777,338</td>
+     
+      <td colspan="3"></td>
+     
+   </tr>
+ <tr class="linked-row odd" data-anchor="#r1c3">
+     
+     
+     <td class="regbutton Others_HGD_unassigned r1c3">
+      <a href="#r1c3">Region&nbsp3</a>
+     </td>
+     <td>
+       
+       <a class="external-link" href="https://gutsmash-documentation.readthedocs.io/en/latest/Glossary.html#gene-cluster-types" target="_blank">Others_HGD_unassigned</a>
+     </td>
+      <td><a class="external-link" href="https://gutsmash-documentation.readthedocs.io/en/latest/Glossary.html#gene-cluster-classes" target="_blank">Putative</a></td>
+     <td class="digits">1,724,949</td>
+     <td class="digits table-split-left">1,749,172</td>
+     
+      <td colspan="3"></td>
+     
+   </tr>
+ <tr class="linked-row even" data-anchor="#r1c4">
+     
+     
+     <td class="regbutton succinate2propionate r1c4">
+      <a href="#r1c4">Region&nbsp4</a>
+     </td>
+     <td>
+       
+       <a class="external-link" href="https://gutsmash-documentation.readthedocs.io/en/latest/Glossary.html#gene-cluster-types" target="_blank">succinate2propionate</a>
+     </td>
+      <td><a class="external-link" href="https://gutsmash-documentation.readthedocs.io/en/latest/Glossary.html#gene-cluster-classes" target="_blank">SCFA</a></td>
+     <td class="digits">2,070,481</td>
+     <td class="digits table-split-left">2,105,697</td>
+     
+      <td colspan="3"></td>
+     
+   </tr>
+ <tr class="linked-row odd" data-anchor="#r1c5">
+     
+     
+     <td class="regbutton PFOR_II_pathway r1c5">
+      <a href="#r1c5">Region&nbsp5</a>
+     </td>
+     <td>
+       
+       <a class="external-link" href="https://gutsmash-documentation.readthedocs.io/en/latest/Glossary.html#gene-cluster-types" target="_blank">PFOR_II_pathway</a>
+     </td>
+      <td><a class="external-link" href="https://gutsmash-documentation.readthedocs.io/en/latest/Glossary.html#gene-cluster-classes" target="_blank">SCFA</a></td>
+     <td class="digits">2,145,855</td>
+     <td class="digits table-split-left">2,169,412</td>
+     
+      <td colspan="3"></td>
+     
+   </tr>
+ <tr class="linked-row even" data-anchor="#r1c6">
+     
+     
+     <td class="regbutton TPP_AA_metabolism r1c6">
+      <a href="#r1c6">Region&nbsp6</a>
+     </td>
+     <td>
+       
+       <a class="external-link" href="https://gutsmash-documentation.readthedocs.io/en/latest/Glossary.html#gene-cluster-types" target="_blank">TPP_AA_metabolism</a>
+     </td>
+      <td><a class="external-link" href="https://gutsmash-documentation.readthedocs.io/en/latest/Glossary.html#gene-cluster-classes" target="_blank">Putative</a></td>
+     <td class="digits">2,589,081</td>
+     <td class="digits table-split-left">2,615,061</td>
+     
+      <td colspan="3"></td>
+     
+   </tr>
+ <tr class="linked-row odd" data-anchor="#r1c7">
+     
+     
+     <td class="regbutton putative_2-oxoglutarate_ferredoxin_oxidoreductase r1c7">
+      <a href="#r1c7">Region&nbsp7</a>
+     </td>
+     <td>
+       
+       <a class="external-link" href="https://gutsmash-documentation.readthedocs.io/en/latest/Glossary.html#gene-cluster-types" target="_blank">putative_2-oxoglutarate_ferredoxin_oxidoreductase</a>
+     </td>
+      <td><a class="external-link" href="https://gutsmash-documentation.readthedocs.io/en/latest/Glossary.html#gene-cluster-classes" target="_blank">Other</a></td>
+     <td class="digits">3,527,850</td>
+     <td class="digits table-split-left">3,550,714</td>
+     
+      <td colspan="3"></td>
+     
+   </tr>
+ <tr class="linked-row even" data-anchor="#r1c8">
+     
+     
+     <td class="regbutton Fumarate2succinate r1c8">
+      <a href="#r1c8">Region&nbsp8</a>
+     </td>
+     <td>
+       
+       <a class="external-link" href="https://gutsmash-documentation.readthedocs.io/en/latest/Glossary.html#gene-cluster-types" target="_blank">Fumarate2succinate</a>
+     </td>
+      <td><a class="external-link" href="https://gutsmash-documentation.readthedocs.io/en/latest/Glossary.html#gene-cluster-classes" target="_blank">SCFA</a></td>
+     <td class="digits">3,863,167</td>
+     <td class="digits table-split-left">3,886,680</td>
+     
+      <td colspan="3"></td>
+     
+   </tr>
+ <tr class="linked-row odd" data-anchor="#r1c9">
+     
+     
+     <td class="regbutton acetate2butyrate_but r1c9">
+      <a href="#r1c9">Region&nbsp9</a>
+     </td>
+     <td>
+       
+       <a class="external-link" href="https://gutsmash-documentation.readthedocs.io/en/latest/Glossary.html#gene-cluster-types" target="_blank">acetate2butyrate_but</a>
+     </td>
+      <td><a class="external-link" href="https://gutsmash-documentation.readthedocs.io/en/latest/Glossary.html#gene-cluster-classes" target="_blank">Other</a></td>
+     <td class="digits">4,072,312</td>
+     <td class="digits table-split-left">4,093,811</td>
+     
+      <td colspan="3"></td>
+     
+   </tr>
+ <tr class="linked-row even" data-anchor="#r1c10">
+     
+     
+     <td class="regbutton ButyrylCoA2butyrate r1c10">
+      <a href="#r1c10">Region&nbsp10</a>
+     </td>
+     <td>
+       
+       <a class="external-link" href="https://gutsmash-documentation.readthedocs.io/en/latest/Glossary.html#gene-cluster-types" target="_blank">ButyrylCoA2butyrate</a>
+     </td>
+      <td><a class="external-link" href="https://gutsmash-documentation.readthedocs.io/en/latest/Glossary.html#gene-cluster-classes" target="_blank">Other</a></td>
+     <td class="digits">4,785,359</td>
+     <td class="digits table-split-left">4,807,606</td>
+     
+      <td colspan="3"></td>
+     
+   </tr>
+ <tr class="linked-row odd" data-anchor="#r1c11">
+     
+     
+     <td class="regbutton NADH_dehydrogenase_I r1c11">
+      <a href="#r1c11">Region&nbsp11</a>
+     </td>
+     <td>
+       
+       <a class="external-link" href="https://gutsmash-documentation.readthedocs.io/en/latest/Glossary.html#gene-cluster-types" target="_blank">NADH_dehydrogenase_I</a>
+     </td>
+      <td><a class="external-link" href="https://gutsmash-documentation.readthedocs.io/en/latest/Glossary.html#gene-cluster-classes" target="_blank">E-MGC</a></td>
+     <td class="digits">5,280,993</td>
+     <td class="digits table-split-left">5,311,226</td>
+     
+      <td colspan="3"></td>
+     
+   </tr>
+ <tr class="linked-row even" data-anchor="#r1c12">
+     
+     
+     <td class="regbutton TPP_fatty_acids r1c12">
+      <a href="#r1c12">Region&nbsp12</a>
+     </td>
+     <td>
+       
+       <a class="external-link" href="https://gutsmash-documentation.readthedocs.io/en/latest/Glossary.html#gene-cluster-types" target="_blank">TPP_fatty_acids</a>
+     </td>
+      <td><a class="external-link" href="https://gutsmash-documentation.readthedocs.io/en/latest/Glossary.html#gene-cluster-classes" target="_blank">Putative</a></td>
+     <td class="digits">6,157,989</td>
+     <td class="digits table-split-left">6,182,845</td>
+     
+      <td colspan="3"></td>
+     
+   </tr>
+ <tr class="linked-row odd" data-anchor="#r1c13">
+     
+     
+     <td class="regbutton Pyruvate2acetate-formate r1c13">
+      <a href="#r1c13">Region&nbsp13</a>
+     </td>
+     <td>
+       
+       <a class="external-link" href="https://gutsmash-documentation.readthedocs.io/en/latest/Glossary.html#gene-cluster-types" target="_blank">Pyruvate2acetate-formate</a>
+     </td>
+      <td><a class="external-link" href="https://gutsmash-documentation.readthedocs.io/en/latest/Glossary.html#gene-cluster-classes" target="_blank">SCFA</a></td>
+     <td class="digits">6,203,943</td>
+     <td class="digits table-split-left">6,226,913</td>
+     
+      <td colspan="3"></td>
+     
+   </tr>
+ 
+ </tbody>
+</table>
+      </div>
+     </div>
+     
+     
+    </div>
+    
+   </div>
+  </div>
+  
+
+
+
+
+
+
+<div class="page" id='r1c1' style="display: none;">
+ <div class="region-grid">
+  <div class = "content">
+    <div class ="description-container">
+      <div class="heading"> NC_004663 - Region 1 - APS_kinase,Phenylpyruvate_ferredoxin_oxidoreductase,Sulfate_adenylyltransferase <div class="help-container"> <div class="help-icon" data-id="region_svg-help-1"></div> <span class="help-tooltip" id="region_svg-help-1">Shows the layout of the region, marking coding sequences and areas of interest. Clicking a gene will select it and show any relevant details. Clicking an area feature (e.g. a candidate cluster) will select all coding sequences within that area. Double clicking an area feature will zoom to that area. Multiple genes and area features can be selected by clicking them while holding the Ctrl key.</span></div></div>
+      <div class="region-download">
+        <a href = NC_004663.1.region001.gbk>Download region GenBank file</a>
+      </div>
+      <div class = 'description-text'>
+        Location: 489,518 - 528,049 nt. (total: 38,532 nt)
+        
+        <a class="cluster-rules-header" id="r1c1-rules-header" href="#r1c1">Show pHMM detection rules used</a>
+        
+        
+      </div>
+      
+      <div class="cluster-rules" id="r1c1-rules">APS_kinase: APS_kinase<br>Sulfate_adenylyltransferase: (PAPS_reduct and GTP_EFTU)<br>Phenylpyruvate_ferredoxin_oxidoreductase: (cds(POR_N and TPP_enzyme_C and not PFOR_II) and POR and not cds(POR_N and TPP_enzyme_C and POR))</div>
+      
+      <div class="region-svg-container">
+       <div id='r1c1-svg'>
+       </div>
+      </div>
+    </div>
+    <div class="legend">
+      <h4>Legend:</h4>
+      <div class="legend-items">
+        <div class="button-like legend-selector" data-id="legend-type-biosynthetic">
+      <div class="legend-field legend-type-biosynthetic"></div>
+      <div class="legend-label">core biosynthetic genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-biosynthetic-additional">
+      <div class="legend-field legend-type-biosynthetic-additional"></div>
+      <div class="legend-label">additional biosynthetic genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-transport">
+      <div class="legend-field legend-type-transport"></div>
+      <div class="legend-label">transport-related genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-regulatory">
+      <div class="legend-field legend-type-regulatory"></div>
+      <div class="legend-label">regulatory genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-resistance">
+      <div class="legend-field legend-type-resistance"></div>
+      <div class="legend-label">resistance genes</div>
+    </div>
+	<div class="button-like legend-selector" data-id="legend-type-encapsulation">
+      <div class="legend-field legend-type-encapsulation"></div>
+      <div class="legend-label">encapsulation genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-electron_transport">
+      <div class="legend-field legend-type-electron_transport"></div>
+      <div class="legend-label">electron transport genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-other">
+      <div class="legend-field legend-type-other"></div>
+      <div class="legend-label">other genes</div>
+    </div>
+        
+        
+        
+      </div>
+    </div>
+    <div class="zoom-buttons">
+      <div class="button-like zoom-button zoom-reset"><img src="images/expand-arrows-alt-solid.svg" alt="reset zoom">reset view</div>
+      <div class="button-like zoom-button zoom-in"><img src="images/search-solid.svg" alt="zoom">zoom to selection</div>
+    </div>
+  </div>
+
+  <div class="focus-panel">
+    <div class="heading">
+      <span>Gene details</span>
+      <div class="help-container"> <div class="help-icon" data-id="focus-panel-help-2"></div> <span class="help-tooltip" id="focus-panel-help-2">Shows details of the most recently selected gene, including names, products, location, and other annotations.</span></div>
+    </div>
+    <div class="focus-panel-content focus-panel-content-r1c1">
+        <div style="text-align: center; margin-top: 30%;">
+            Select a gene to view the details available for it
+        </div>
+    </div>
+  </div>
+
+  
+  <div class="body-details">
+    <div class="body-details-headers">
+    
+    </div>
+    
+  </div>
+
+  <div class="sidepanel">
+    <div class="sidepanel-details-headers">
+    
+    </div>
+    
+  </div>
+
+ </div>
+
+</div>
+
+<div class="page" id='r1c2' style="display: none;">
+ <div class="region-grid">
+  <div class = "content">
+    <div class ="description-container">
+      <div class="heading"> NC_004663 - Region 2 - Rnf_complex <div class="help-container"> <div class="help-icon" data-id="region_svg-help-3"></div> <span class="help-tooltip" id="region_svg-help-3">Shows the layout of the region, marking coding sequences and areas of interest. Clicking a gene will select it and show any relevant details. Clicking an area feature (e.g. a candidate cluster) will select all coding sequences within that area. Double clicking an area feature will zoom to that area. Multiple genes and area features can be selected by clicking them while holding the Ctrl key.</span></div></div>
+      <div class="region-download">
+        <a href = NC_004663.1.region002.gbk>Download region GenBank file</a>
+      </div>
+      <div class = 'description-text'>
+        Location: 752,189 - 777,338 nt. (total: 25,150 nt)
+        
+        <a class="cluster-rules-header" id="r1c2-rules-header" href="#r1c2">Show pHMM detection rules used</a>
+        
+        
+      </div>
+      
+      <div class="cluster-rules" id="r1c2-rules">Rnf_complex: (Complex1_51K and minimum(5, [FMN_bind, FeS, Fer4, Fer4_9, NQR2_RnfD_RnfE, Rnf-Nqr, RnfC_N, SLBB]))</div>
+      
+      <div class="region-svg-container">
+       <div id='r1c2-svg'>
+       </div>
+      </div>
+    </div>
+    <div class="legend">
+      <h4>Legend:</h4>
+      <div class="legend-items">
+        <div class="button-like legend-selector" data-id="legend-type-biosynthetic">
+      <div class="legend-field legend-type-biosynthetic"></div>
+      <div class="legend-label">core biosynthetic genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-biosynthetic-additional">
+      <div class="legend-field legend-type-biosynthetic-additional"></div>
+      <div class="legend-label">additional biosynthetic genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-transport">
+      <div class="legend-field legend-type-transport"></div>
+      <div class="legend-label">transport-related genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-regulatory">
+      <div class="legend-field legend-type-regulatory"></div>
+      <div class="legend-label">regulatory genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-resistance">
+      <div class="legend-field legend-type-resistance"></div>
+      <div class="legend-label">resistance genes</div>
+    </div>
+	<div class="button-like legend-selector" data-id="legend-type-encapsulation">
+      <div class="legend-field legend-type-encapsulation"></div>
+      <div class="legend-label">encapsulation genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-electron_transport">
+      <div class="legend-field legend-type-electron_transport"></div>
+      <div class="legend-label">electron transport genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-other">
+      <div class="legend-field legend-type-other"></div>
+      <div class="legend-label">other genes</div>
+    </div>
+        
+        
+        
+      </div>
+    </div>
+    <div class="zoom-buttons">
+      <div class="button-like zoom-button zoom-reset"><img src="images/expand-arrows-alt-solid.svg" alt="reset zoom">reset view</div>
+      <div class="button-like zoom-button zoom-in"><img src="images/search-solid.svg" alt="zoom">zoom to selection</div>
+    </div>
+  </div>
+
+  <div class="focus-panel">
+    <div class="heading">
+      <span>Gene details</span>
+      <div class="help-container"> <div class="help-icon" data-id="focus-panel-help-4"></div> <span class="help-tooltip" id="focus-panel-help-4">Shows details of the most recently selected gene, including names, products, location, and other annotations.</span></div>
+    </div>
+    <div class="focus-panel-content focus-panel-content-r1c2">
+        <div style="text-align: center; margin-top: 30%;">
+            Select a gene to view the details available for it
+        </div>
+    </div>
+  </div>
+
+  
+  <div class="body-details">
+    <div class="body-details-headers">
+    
+    </div>
+    
+  </div>
+
+  <div class="sidepanel">
+    <div class="sidepanel-details-headers">
+    
+    </div>
+    
+  </div>
+
+ </div>
+
+</div>
+
+<div class="page" id='r1c3' style="display: none;">
+ <div class="region-grid">
+  <div class = "content">
+    <div class ="description-container">
+      <div class="heading"> NC_004663 - Region 3 - Others_HGD_unassigned <div class="help-container"> <div class="help-icon" data-id="region_svg-help-5"></div> <span class="help-tooltip" id="region_svg-help-5">Shows the layout of the region, marking coding sequences and areas of interest. Clicking a gene will select it and show any relevant details. Clicking an area feature (e.g. a candidate cluster) will select all coding sequences within that area. Double clicking an area feature will zoom to that area. Multiple genes and area features can be selected by clicking them while holding the Ctrl key.</span></div></div>
+      <div class="region-download">
+        <a href = NC_004663.1.region003.gbk>Download region GenBank file</a>
+      </div>
+      <div class = 'description-text'>
+        Location: 1,724,949 - 1,749,172 nt. (total: 24,224 nt)
+        
+        <a class="cluster-rules-header" id="r1c3-rules-header" href="#r1c3">Show pHMM detection rules used</a>
+        
+        
+      </div>
+      
+      <div class="cluster-rules" id="r1c3-rules">Others_HGD_unassigned: (minimum(1, [HAAA1, HG2B1, HG2B2, HGD-D, HleuD1, HleuD2, HleuS1, HleuS2, Lactoyl-CoA1, Lactoyl-CoA2]) and minimum(1, [ACP_syn_III, ACP_syn_III_C, AcetylCoA_hyd_C, AcetylCoA_hydro, Acyl-CoA_dh_1, Acyl-CoA_dh_2, AdoHcyase_NAD, AlaDh_PNT_C, BcrAD_BadFG, Biotin_lipoyl, Carboxyl_trans, CoA_trans, CoA_trans_230_acto, CoA_trans_6_Glutaconate, CoA_transf_3, ECH_1, ECH_2, ETF, ETF_alpha, FGGY_C, HCDH, HCDH_N, Hacid_dh, Hacid_dh_C, Mal_decarbox_Al, Peptidase_M22, Peptidase_M23, Thiolase_C, Thiolase_N, ketoacyl-synt]) and not (minimum(2, [AcetylCoA_hyd_C, BcrAD_BadFG, CoA_trans, CoA_trans_230_acto, Mal_decarbox_Al]) and Lactoyl-CoA2 and Lactoyl-CoA1) and not (minimum(4, [ACP_syn_III, ACP_syn_III_C, Acyl-CoA_dh_1, Acyl-CoA_dh_2, AlaDh_PNT_C, BcrAD_BadFG, ECH_1, ECH_2, ETF, ETF_alpha, HCDH, HCDH_N, Hacid_dh, Hacid_dh_C, IlvN, NAD_Gly3P_dh_N, Thiolase_C, Thiolase_N, ketoacyl-synt]) and HAAA1 and not HleuS1))</div>
+      
+      <div class="region-svg-container">
+       <div id='r1c3-svg'>
+       </div>
+      </div>
+    </div>
+    <div class="legend">
+      <h4>Legend:</h4>
+      <div class="legend-items">
+        <div class="button-like legend-selector" data-id="legend-type-biosynthetic">
+      <div class="legend-field legend-type-biosynthetic"></div>
+      <div class="legend-label">core biosynthetic genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-biosynthetic-additional">
+      <div class="legend-field legend-type-biosynthetic-additional"></div>
+      <div class="legend-label">additional biosynthetic genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-transport">
+      <div class="legend-field legend-type-transport"></div>
+      <div class="legend-label">transport-related genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-regulatory">
+      <div class="legend-field legend-type-regulatory"></div>
+      <div class="legend-label">regulatory genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-resistance">
+      <div class="legend-field legend-type-resistance"></div>
+      <div class="legend-label">resistance genes</div>
+    </div>
+	<div class="button-like legend-selector" data-id="legend-type-encapsulation">
+      <div class="legend-field legend-type-encapsulation"></div>
+      <div class="legend-label">encapsulation genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-electron_transport">
+      <div class="legend-field legend-type-electron_transport"></div>
+      <div class="legend-label">electron transport genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-other">
+      <div class="legend-field legend-type-other"></div>
+      <div class="legend-label">other genes</div>
+    </div>
+        
+        
+        
+      </div>
+    </div>
+    <div class="zoom-buttons">
+      <div class="button-like zoom-button zoom-reset"><img src="images/expand-arrows-alt-solid.svg" alt="reset zoom">reset view</div>
+      <div class="button-like zoom-button zoom-in"><img src="images/search-solid.svg" alt="zoom">zoom to selection</div>
+    </div>
+  </div>
+
+  <div class="focus-panel">
+    <div class="heading">
+      <span>Gene details</span>
+      <div class="help-container"> <div class="help-icon" data-id="focus-panel-help-6"></div> <span class="help-tooltip" id="focus-panel-help-6">Shows details of the most recently selected gene, including names, products, location, and other annotations.</span></div>
+    </div>
+    <div class="focus-panel-content focus-panel-content-r1c3">
+        <div style="text-align: center; margin-top: 30%;">
+            Select a gene to view the details available for it
+        </div>
+    </div>
+  </div>
+
+  
+  <div class="body-details">
+    <div class="body-details-headers">
+    
+    </div>
+    
+  </div>
+
+  <div class="sidepanel">
+    <div class="sidepanel-details-headers">
+    
+    </div>
+    
+  </div>
+
+ </div>
+
+</div>
+
+<div class="page" id='r1c4' style="display: none;">
+ <div class="region-grid">
+  <div class = "content">
+    <div class ="description-container">
+      <div class="heading"> NC_004663 - Region 4 - succinate2propionate <div class="help-container"> <div class="help-icon" data-id="region_svg-help-7"></div> <span class="help-tooltip" id="region_svg-help-7">Shows the layout of the region, marking coding sequences and areas of interest. Clicking a gene will select it and show any relevant details. Clicking an area feature (e.g. a candidate cluster) will select all coding sequences within that area. Double clicking an area feature will zoom to that area. Multiple genes and area features can be selected by clicking them while holding the Ctrl key.</span></div></div>
+      <div class="region-download">
+        <a href = NC_004663.1.region004.gbk>Download region GenBank file</a>
+      </div>
+      <div class = 'description-text'>
+        Location: 2,070,481 - 2,105,697 nt. (total: 35,217 nt)
+        
+        <a class="cluster-rules-header" id="r1c4-rules-header" href="#r1c4">Show pHMM detection rules used</a>
+        
+        
+      </div>
+      
+      <div class="cluster-rules" id="r1c4-rules">succinate2propionate: (minimum(4, [AcetylCoA_hyd_C, AcetylCoA_hydro, B12-binding, Biotin_lipoyl, Glyoxalase_4, HMGL-like, MM_CoA_mutase, MeaB, OAD_beta, OAD_gamma, PYC_OADA]) and minimum(1, [CT_Btheta, CT_Propionyl_CoA1, CT_Propionyl_CoA2, CT_Propionyl_CoA3, CT_Vparvula]) and not Cytidylate_kin)</div>
+      
+      <div class="region-svg-container">
+       <div id='r1c4-svg'>
+       </div>
+      </div>
+    </div>
+    <div class="legend">
+      <h4>Legend:</h4>
+      <div class="legend-items">
+        <div class="button-like legend-selector" data-id="legend-type-biosynthetic">
+      <div class="legend-field legend-type-biosynthetic"></div>
+      <div class="legend-label">core biosynthetic genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-biosynthetic-additional">
+      <div class="legend-field legend-type-biosynthetic-additional"></div>
+      <div class="legend-label">additional biosynthetic genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-transport">
+      <div class="legend-field legend-type-transport"></div>
+      <div class="legend-label">transport-related genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-regulatory">
+      <div class="legend-field legend-type-regulatory"></div>
+      <div class="legend-label">regulatory genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-resistance">
+      <div class="legend-field legend-type-resistance"></div>
+      <div class="legend-label">resistance genes</div>
+    </div>
+	<div class="button-like legend-selector" data-id="legend-type-encapsulation">
+      <div class="legend-field legend-type-encapsulation"></div>
+      <div class="legend-label">encapsulation genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-electron_transport">
+      <div class="legend-field legend-type-electron_transport"></div>
+      <div class="legend-label">electron transport genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-other">
+      <div class="legend-field legend-type-other"></div>
+      <div class="legend-label">other genes</div>
+    </div>
+        
+        
+        
+      </div>
+    </div>
+    <div class="zoom-buttons">
+      <div class="button-like zoom-button zoom-reset"><img src="images/expand-arrows-alt-solid.svg" alt="reset zoom">reset view</div>
+      <div class="button-like zoom-button zoom-in"><img src="images/search-solid.svg" alt="zoom">zoom to selection</div>
+    </div>
+  </div>
+
+  <div class="focus-panel">
+    <div class="heading">
+      <span>Gene details</span>
+      <div class="help-container"> <div class="help-icon" data-id="focus-panel-help-8"></div> <span class="help-tooltip" id="focus-panel-help-8">Shows details of the most recently selected gene, including names, products, location, and other annotations.</span></div>
+    </div>
+    <div class="focus-panel-content focus-panel-content-r1c4">
+        <div style="text-align: center; margin-top: 30%;">
+            Select a gene to view the details available for it
+        </div>
+    </div>
+  </div>
+
+  
+  <div class="body-details">
+    <div class="body-details-headers">
+    
+    </div>
+    
+  </div>
+
+  <div class="sidepanel">
+    <div class="sidepanel-details-headers">
+    
+    </div>
+    
+  </div>
+
+ </div>
+
+</div>
+
+<div class="page" id='r1c5' style="display: none;">
+ <div class="region-grid">
+  <div class = "content">
+    <div class ="description-container">
+      <div class="heading"> NC_004663 - Region 5 - PFOR_II_pathway <div class="help-container"> <div class="help-icon" data-id="region_svg-help-9"></div> <span class="help-tooltip" id="region_svg-help-9">Shows the layout of the region, marking coding sequences and areas of interest. Clicking a gene will select it and show any relevant details. Clicking an area feature (e.g. a candidate cluster) will select all coding sequences within that area. Double clicking an area feature will zoom to that area. Multiple genes and area features can be selected by clicking them while holding the Ctrl key.</span></div></div>
+      <div class="region-download">
+        <a href = NC_004663.1.region005.gbk>Download region GenBank file</a>
+      </div>
+      <div class = 'description-text'>
+        Location: 2,145,855 - 2,169,412 nt. (total: 23,558 nt)
+        
+        <a class="cluster-rules-header" id="r1c5-rules-header" href="#r1c5">Show pHMM detection rules used</a>
+        
+        
+      </div>
+      
+      <div class="cluster-rules" id="r1c5-rules">PFOR_II_pathway: cds(POR and POR_N and PFOR_II and EKR and Fer4_16 and TPP_enzyme_C)</div>
+      
+      <div class="region-svg-container">
+       <div id='r1c5-svg'>
+       </div>
+      </div>
+    </div>
+    <div class="legend">
+      <h4>Legend:</h4>
+      <div class="legend-items">
+        <div class="button-like legend-selector" data-id="legend-type-biosynthetic">
+      <div class="legend-field legend-type-biosynthetic"></div>
+      <div class="legend-label">core biosynthetic genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-biosynthetic-additional">
+      <div class="legend-field legend-type-biosynthetic-additional"></div>
+      <div class="legend-label">additional biosynthetic genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-transport">
+      <div class="legend-field legend-type-transport"></div>
+      <div class="legend-label">transport-related genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-regulatory">
+      <div class="legend-field legend-type-regulatory"></div>
+      <div class="legend-label">regulatory genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-resistance">
+      <div class="legend-field legend-type-resistance"></div>
+      <div class="legend-label">resistance genes</div>
+    </div>
+	<div class="button-like legend-selector" data-id="legend-type-encapsulation">
+      <div class="legend-field legend-type-encapsulation"></div>
+      <div class="legend-label">encapsulation genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-electron_transport">
+      <div class="legend-field legend-type-electron_transport"></div>
+      <div class="legend-label">electron transport genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-other">
+      <div class="legend-field legend-type-other"></div>
+      <div class="legend-label">other genes</div>
+    </div>
+        
+        
+        
+      </div>
+    </div>
+    <div class="zoom-buttons">
+      <div class="button-like zoom-button zoom-reset"><img src="images/expand-arrows-alt-solid.svg" alt="reset zoom">reset view</div>
+      <div class="button-like zoom-button zoom-in"><img src="images/search-solid.svg" alt="zoom">zoom to selection</div>
+    </div>
+  </div>
+
+  <div class="focus-panel">
+    <div class="heading">
+      <span>Gene details</span>
+      <div class="help-container"> <div class="help-icon" data-id="focus-panel-help-10"></div> <span class="help-tooltip" id="focus-panel-help-10">Shows details of the most recently selected gene, including names, products, location, and other annotations.</span></div>
+    </div>
+    <div class="focus-panel-content focus-panel-content-r1c5">
+        <div style="text-align: center; margin-top: 30%;">
+            Select a gene to view the details available for it
+        </div>
+    </div>
+  </div>
+
+  
+  <div class="body-details">
+    <div class="body-details-headers">
+    
+    </div>
+    
+  </div>
+
+  <div class="sidepanel">
+    <div class="sidepanel-details-headers">
+    
+    </div>
+    
+  </div>
+
+ </div>
+
+</div>
+
+<div class="page" id='r1c6' style="display: none;">
+ <div class="region-grid">
+  <div class = "content">
+    <div class ="description-container">
+      <div class="heading"> NC_004663 - Region 6 - TPP_AA_metabolism <div class="help-container"> <div class="help-icon" data-id="region_svg-help-11"></div> <span class="help-tooltip" id="region_svg-help-11">Shows the layout of the region, marking coding sequences and areas of interest. Clicking a gene will select it and show any relevant details. Clicking an area feature (e.g. a candidate cluster) will select all coding sequences within that area. Double clicking an area feature will zoom to that area. Multiple genes and area features can be selected by clicking them while holding the Ctrl key.</span></div></div>
+      <div class="region-download">
+        <a href = NC_004663.1.region006.gbk>Download region GenBank file</a>
+      </div>
+      <div class = 'description-text'>
+        Location: 2,589,081 - 2,615,061 nt. (total: 25,981 nt)
+        
+        <a class="cluster-rules-header" id="r1c6-rules-header" href="#r1c6">Show pHMM detection rules used</a>
+        
+        
+      </div>
+      
+      <div class="cluster-rules" id="r1c6-rules">TPP_AA_metabolism: (TPP_enzyme_C and not (PFL-like or PFL_6_pcresol or PFL_9_tma or Gly_radical or Gly_430_pcre or Gly_8-9_TMA or PFL_acetate1 or PFL_acetate2 or Gly_radical_scatole or PFL_proline or PFL_toluene) and minimum(2, [ALS_ss_C, AlaDh_PNT_C, Arginase, BKACE, BcrAD_BadFG, Beta_elim_lyase, CPSase_L_D2, Cys_Met_Meta_PP, ELFV_dehydrog, GRDB, Glu_syn_central, Glu_synthase, Gly_reductase, HAAA1, HG2B1, HG2B2, HGD-D, HleuD1, HleuD2, HleuS1, HleuS2, Homoserine_dh, ILVD_EDD, IlvC, Lactoyl-CoA1, Lactoyl-CoA2, Lyase_aromatic, MAAL_C, OKR_DC_1_5_lysine, OKR_DC_1_5_ornithine, OKR_DC_1_7_arginine, OKR_DC_1_C, OTCace, PALP, Proline_reductase, Sacchrp_dh_C, TPL, Thr_dehydrat_C, TnaA, Urocanase]) and not (POR or POR_N or PFOR_II))</div>
+      
+      <div class="region-svg-container">
+       <div id='r1c6-svg'>
+       </div>
+      </div>
+    </div>
+    <div class="legend">
+      <h4>Legend:</h4>
+      <div class="legend-items">
+        <div class="button-like legend-selector" data-id="legend-type-biosynthetic">
+      <div class="legend-field legend-type-biosynthetic"></div>
+      <div class="legend-label">core biosynthetic genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-biosynthetic-additional">
+      <div class="legend-field legend-type-biosynthetic-additional"></div>
+      <div class="legend-label">additional biosynthetic genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-transport">
+      <div class="legend-field legend-type-transport"></div>
+      <div class="legend-label">transport-related genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-regulatory">
+      <div class="legend-field legend-type-regulatory"></div>
+      <div class="legend-label">regulatory genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-resistance">
+      <div class="legend-field legend-type-resistance"></div>
+      <div class="legend-label">resistance genes</div>
+    </div>
+	<div class="button-like legend-selector" data-id="legend-type-encapsulation">
+      <div class="legend-field legend-type-encapsulation"></div>
+      <div class="legend-label">encapsulation genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-electron_transport">
+      <div class="legend-field legend-type-electron_transport"></div>
+      <div class="legend-label">electron transport genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-other">
+      <div class="legend-field legend-type-other"></div>
+      <div class="legend-label">other genes</div>
+    </div>
+        
+        
+        
+      </div>
+    </div>
+    <div class="zoom-buttons">
+      <div class="button-like zoom-button zoom-reset"><img src="images/expand-arrows-alt-solid.svg" alt="reset zoom">reset view</div>
+      <div class="button-like zoom-button zoom-in"><img src="images/search-solid.svg" alt="zoom">zoom to selection</div>
+    </div>
+  </div>
+
+  <div class="focus-panel">
+    <div class="heading">
+      <span>Gene details</span>
+      <div class="help-container"> <div class="help-icon" data-id="focus-panel-help-12"></div> <span class="help-tooltip" id="focus-panel-help-12">Shows details of the most recently selected gene, including names, products, location, and other annotations.</span></div>
+    </div>
+    <div class="focus-panel-content focus-panel-content-r1c6">
+        <div style="text-align: center; margin-top: 30%;">
+            Select a gene to view the details available for it
+        </div>
+    </div>
+  </div>
+
+  
+  <div class="body-details">
+    <div class="body-details-headers">
+    
+    </div>
+    
+  </div>
+
+  <div class="sidepanel">
+    <div class="sidepanel-details-headers">
+    
+    </div>
+    
+  </div>
+
+ </div>
+
+</div>
+
+<div class="page" id='r1c7' style="display: none;">
+ <div class="region-grid">
+  <div class = "content">
+    <div class ="description-container">
+      <div class="heading"> NC_004663 - Region 7 - putative_2-oxoglutarate_ferredoxin_oxidoreductase <div class="help-container"> <div class="help-icon" data-id="region_svg-help-13"></div> <span class="help-tooltip" id="region_svg-help-13">Shows the layout of the region, marking coding sequences and areas of interest. Clicking a gene will select it and show any relevant details. Clicking an area feature (e.g. a candidate cluster) will select all coding sequences within that area. Double clicking an area feature will zoom to that area. Multiple genes and area features can be selected by clicking them while holding the Ctrl key.</span></div></div>
+      <div class="region-download">
+        <a href = NC_004663.1.region007.gbk>Download region GenBank file</a>
+      </div>
+      <div class = 'description-text'>
+        Location: 3,527,850 - 3,550,714 nt. (total: 22,865 nt)
+        
+        <a class="cluster-rules-header" id="r1c7-rules-header" href="#r1c7">Show pHMM detection rules used</a>
+        
+        
+      </div>
+      
+      <div class="cluster-rules" id="r1c7-rules">putative_2-oxoglutarate_ferredoxin_oxidoreductase: (cds(POR_N and POR and PFOR_II) and TPP_enzyme_C and not cds(POR_N and TPP_enzyme_C and POR))</div>
+      
+      <div class="region-svg-container">
+       <div id='r1c7-svg'>
+       </div>
+      </div>
+    </div>
+    <div class="legend">
+      <h4>Legend:</h4>
+      <div class="legend-items">
+        <div class="button-like legend-selector" data-id="legend-type-biosynthetic">
+      <div class="legend-field legend-type-biosynthetic"></div>
+      <div class="legend-label">core biosynthetic genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-biosynthetic-additional">
+      <div class="legend-field legend-type-biosynthetic-additional"></div>
+      <div class="legend-label">additional biosynthetic genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-transport">
+      <div class="legend-field legend-type-transport"></div>
+      <div class="legend-label">transport-related genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-regulatory">
+      <div class="legend-field legend-type-regulatory"></div>
+      <div class="legend-label">regulatory genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-resistance">
+      <div class="legend-field legend-type-resistance"></div>
+      <div class="legend-label">resistance genes</div>
+    </div>
+	<div class="button-like legend-selector" data-id="legend-type-encapsulation">
+      <div class="legend-field legend-type-encapsulation"></div>
+      <div class="legend-label">encapsulation genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-electron_transport">
+      <div class="legend-field legend-type-electron_transport"></div>
+      <div class="legend-label">electron transport genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-other">
+      <div class="legend-field legend-type-other"></div>
+      <div class="legend-label">other genes</div>
+    </div>
+        
+        
+        
+      </div>
+    </div>
+    <div class="zoom-buttons">
+      <div class="button-like zoom-button zoom-reset"><img src="images/expand-arrows-alt-solid.svg" alt="reset zoom">reset view</div>
+      <div class="button-like zoom-button zoom-in"><img src="images/search-solid.svg" alt="zoom">zoom to selection</div>
+    </div>
+  </div>
+
+  <div class="focus-panel">
+    <div class="heading">
+      <span>Gene details</span>
+      <div class="help-container"> <div class="help-icon" data-id="focus-panel-help-14"></div> <span class="help-tooltip" id="focus-panel-help-14">Shows details of the most recently selected gene, including names, products, location, and other annotations.</span></div>
+    </div>
+    <div class="focus-panel-content focus-panel-content-r1c7">
+        <div style="text-align: center; margin-top: 30%;">
+            Select a gene to view the details available for it
+        </div>
+    </div>
+  </div>
+
+  
+  <div class="body-details">
+    <div class="body-details-headers">
+    
+    </div>
+    
+  </div>
+
+  <div class="sidepanel">
+    <div class="sidepanel-details-headers">
+    
+    </div>
+    
+  </div>
+
+ </div>
+
+</div>
+
+<div class="page" id='r1c8' style="display: none;">
+ <div class="region-grid">
+  <div class = "content">
+    <div class ="description-container">
+      <div class="heading"> NC_004663 - Region 8 - Fumarate2succinate <div class="help-container"> <div class="help-icon" data-id="region_svg-help-15"></div> <span class="help-tooltip" id="region_svg-help-15">Shows the layout of the region, marking coding sequences and areas of interest. Clicking a gene will select it and show any relevant details. Clicking an area feature (e.g. a candidate cluster) will select all coding sequences within that area. Double clicking an area feature will zoom to that area. Multiple genes and area features can be selected by clicking them while holding the Ctrl key.</span></div></div>
+      <div class="region-download">
+        <a href = NC_004663.1.region008.gbk>Download region GenBank file</a>
+      </div>
+      <div class = 'description-text'>
+        Location: 3,863,167 - 3,886,680 nt. (total: 23,514 nt)
+        
+        <a class="cluster-rules-header" id="r1c8-rules-header" href="#r1c8">Show pHMM detection rules used</a>
+        
+        
+      </div>
+      
+      <div class="cluster-rules" id="r1c8-rules">Fumarate2succinate: (Succ_DH_flav_C and FAD_binding_2 and (Fer2_3 or Fer4_7 or SucD_FumR))</div>
+      
+      <div class="region-svg-container">
+       <div id='r1c8-svg'>
+       </div>
+      </div>
+    </div>
+    <div class="legend">
+      <h4>Legend:</h4>
+      <div class="legend-items">
+        <div class="button-like legend-selector" data-id="legend-type-biosynthetic">
+      <div class="legend-field legend-type-biosynthetic"></div>
+      <div class="legend-label">core biosynthetic genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-biosynthetic-additional">
+      <div class="legend-field legend-type-biosynthetic-additional"></div>
+      <div class="legend-label">additional biosynthetic genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-transport">
+      <div class="legend-field legend-type-transport"></div>
+      <div class="legend-label">transport-related genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-regulatory">
+      <div class="legend-field legend-type-regulatory"></div>
+      <div class="legend-label">regulatory genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-resistance">
+      <div class="legend-field legend-type-resistance"></div>
+      <div class="legend-label">resistance genes</div>
+    </div>
+	<div class="button-like legend-selector" data-id="legend-type-encapsulation">
+      <div class="legend-field legend-type-encapsulation"></div>
+      <div class="legend-label">encapsulation genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-electron_transport">
+      <div class="legend-field legend-type-electron_transport"></div>
+      <div class="legend-label">electron transport genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-other">
+      <div class="legend-field legend-type-other"></div>
+      <div class="legend-label">other genes</div>
+    </div>
+        
+        
+        
+      </div>
+    </div>
+    <div class="zoom-buttons">
+      <div class="button-like zoom-button zoom-reset"><img src="images/expand-arrows-alt-solid.svg" alt="reset zoom">reset view</div>
+      <div class="button-like zoom-button zoom-in"><img src="images/search-solid.svg" alt="zoom">zoom to selection</div>
+    </div>
+  </div>
+
+  <div class="focus-panel">
+    <div class="heading">
+      <span>Gene details</span>
+      <div class="help-container"> <div class="help-icon" data-id="focus-panel-help-16"></div> <span class="help-tooltip" id="focus-panel-help-16">Shows details of the most recently selected gene, including names, products, location, and other annotations.</span></div>
+    </div>
+    <div class="focus-panel-content focus-panel-content-r1c8">
+        <div style="text-align: center; margin-top: 30%;">
+            Select a gene to view the details available for it
+        </div>
+    </div>
+  </div>
+
+  
+  <div class="body-details">
+    <div class="body-details-headers">
+    
+    </div>
+    
+  </div>
+
+  <div class="sidepanel">
+    <div class="sidepanel-details-headers">
+    
+    </div>
+    
+  </div>
+
+ </div>
+
+</div>
+
+<div class="page" id='r1c9' style="display: none;">
+ <div class="region-grid">
+  <div class = "content">
+    <div class ="description-container">
+      <div class="heading"> NC_004663 - Region 9 - acetate2butyrate_but <div class="help-container"> <div class="help-icon" data-id="region_svg-help-17"></div> <span class="help-tooltip" id="region_svg-help-17">Shows the layout of the region, marking coding sequences and areas of interest. Clicking a gene will select it and show any relevant details. Clicking an area feature (e.g. a candidate cluster) will select all coding sequences within that area. Double clicking an area feature will zoom to that area. Multiple genes and area features can be selected by clicking them while holding the Ctrl key.</span></div></div>
+      <div class="region-download">
+        <a href = NC_004663.1.region009.gbk>Download region GenBank file</a>
+      </div>
+      <div class = 'description-text'>
+        Location: 4,072,312 - 4,093,811 nt. (total: 21,500 nt)
+        
+        <a class="cluster-rules-header" id="r1c9-rules-header" href="#r1c9">Show pHMM detection rules used</a>
+        
+        
+      </div>
+      
+      <div class="cluster-rules" id="r1c9-rules">acetate2butyrate_but: cds(AcetylCoA_hydro and AcetylCoA_hyd_C)</div>
+      
+      <div class="region-svg-container">
+       <div id='r1c9-svg'>
+       </div>
+      </div>
+    </div>
+    <div class="legend">
+      <h4>Legend:</h4>
+      <div class="legend-items">
+        <div class="button-like legend-selector" data-id="legend-type-biosynthetic">
+      <div class="legend-field legend-type-biosynthetic"></div>
+      <div class="legend-label">core biosynthetic genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-biosynthetic-additional">
+      <div class="legend-field legend-type-biosynthetic-additional"></div>
+      <div class="legend-label">additional biosynthetic genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-transport">
+      <div class="legend-field legend-type-transport"></div>
+      <div class="legend-label">transport-related genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-regulatory">
+      <div class="legend-field legend-type-regulatory"></div>
+      <div class="legend-label">regulatory genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-resistance">
+      <div class="legend-field legend-type-resistance"></div>
+      <div class="legend-label">resistance genes</div>
+    </div>
+	<div class="button-like legend-selector" data-id="legend-type-encapsulation">
+      <div class="legend-field legend-type-encapsulation"></div>
+      <div class="legend-label">encapsulation genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-electron_transport">
+      <div class="legend-field legend-type-electron_transport"></div>
+      <div class="legend-label">electron transport genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-other">
+      <div class="legend-field legend-type-other"></div>
+      <div class="legend-label">other genes</div>
+    </div>
+        
+        
+        
+      </div>
+    </div>
+    <div class="zoom-buttons">
+      <div class="button-like zoom-button zoom-reset"><img src="images/expand-arrows-alt-solid.svg" alt="reset zoom">reset view</div>
+      <div class="button-like zoom-button zoom-in"><img src="images/search-solid.svg" alt="zoom">zoom to selection</div>
+    </div>
+  </div>
+
+  <div class="focus-panel">
+    <div class="heading">
+      <span>Gene details</span>
+      <div class="help-container"> <div class="help-icon" data-id="focus-panel-help-18"></div> <span class="help-tooltip" id="focus-panel-help-18">Shows details of the most recently selected gene, including names, products, location, and other annotations.</span></div>
+    </div>
+    <div class="focus-panel-content focus-panel-content-r1c9">
+        <div style="text-align: center; margin-top: 30%;">
+            Select a gene to view the details available for it
+        </div>
+    </div>
+  </div>
+
+  
+  <div class="body-details">
+    <div class="body-details-headers">
+    
+    </div>
+    
+  </div>
+
+  <div class="sidepanel">
+    <div class="sidepanel-details-headers">
+    
+    </div>
+    
+  </div>
+
+ </div>
+
+</div>
+
+<div class="page" id='r1c10' style="display: none;">
+ <div class="region-grid">
+  <div class = "content">
+    <div class ="description-container">
+      <div class="heading"> NC_004663 - Region 10 - ButyrylCoA2butyrate <div class="help-container"> <div class="help-icon" data-id="region_svg-help-19"></div> <span class="help-tooltip" id="region_svg-help-19">Shows the layout of the region, marking coding sequences and areas of interest. Clicking a gene will select it and show any relevant details. Clicking an area feature (e.g. a candidate cluster) will select all coding sequences within that area. Double clicking an area feature will zoom to that area. Multiple genes and area features can be selected by clicking them while holding the Ctrl key.</span></div></div>
+      <div class="region-download">
+        <a href = NC_004663.1.region010.gbk>Download region GenBank file</a>
+      </div>
+      <div class = 'description-text'>
+        Location: 4,785,359 - 4,807,606 nt. (total: 22,248 nt)
+        
+        <a class="cluster-rules-header" id="r1c10-rules-header" href="#r1c10">Show pHMM detection rules used</a>
+        
+        
+      </div>
+      
+      <div class="cluster-rules" id="r1c10-rules">ButyrylCoA2butyrate: (PTA_PTB and Acetate_kinase)</div>
+      
+      <div class="region-svg-container">
+       <div id='r1c10-svg'>
+       </div>
+      </div>
+    </div>
+    <div class="legend">
+      <h4>Legend:</h4>
+      <div class="legend-items">
+        <div class="button-like legend-selector" data-id="legend-type-biosynthetic">
+      <div class="legend-field legend-type-biosynthetic"></div>
+      <div class="legend-label">core biosynthetic genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-biosynthetic-additional">
+      <div class="legend-field legend-type-biosynthetic-additional"></div>
+      <div class="legend-label">additional biosynthetic genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-transport">
+      <div class="legend-field legend-type-transport"></div>
+      <div class="legend-label">transport-related genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-regulatory">
+      <div class="legend-field legend-type-regulatory"></div>
+      <div class="legend-label">regulatory genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-resistance">
+      <div class="legend-field legend-type-resistance"></div>
+      <div class="legend-label">resistance genes</div>
+    </div>
+	<div class="button-like legend-selector" data-id="legend-type-encapsulation">
+      <div class="legend-field legend-type-encapsulation"></div>
+      <div class="legend-label">encapsulation genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-electron_transport">
+      <div class="legend-field legend-type-electron_transport"></div>
+      <div class="legend-label">electron transport genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-other">
+      <div class="legend-field legend-type-other"></div>
+      <div class="legend-label">other genes</div>
+    </div>
+        
+        
+        
+      </div>
+    </div>
+    <div class="zoom-buttons">
+      <div class="button-like zoom-button zoom-reset"><img src="images/expand-arrows-alt-solid.svg" alt="reset zoom">reset view</div>
+      <div class="button-like zoom-button zoom-in"><img src="images/search-solid.svg" alt="zoom">zoom to selection</div>
+    </div>
+  </div>
+
+  <div class="focus-panel">
+    <div class="heading">
+      <span>Gene details</span>
+      <div class="help-container"> <div class="help-icon" data-id="focus-panel-help-20"></div> <span class="help-tooltip" id="focus-panel-help-20">Shows details of the most recently selected gene, including names, products, location, and other annotations.</span></div>
+    </div>
+    <div class="focus-panel-content focus-panel-content-r1c10">
+        <div style="text-align: center; margin-top: 30%;">
+            Select a gene to view the details available for it
+        </div>
+    </div>
+  </div>
+
+  
+  <div class="body-details">
+    <div class="body-details-headers">
+    
+    </div>
+    
+  </div>
+
+  <div class="sidepanel">
+    <div class="sidepanel-details-headers">
+    
+    </div>
+    
+  </div>
+
+ </div>
+
+</div>
+
+<div class="page" id='r1c11' style="display: none;">
+ <div class="region-grid">
+  <div class = "content">
+    <div class ="description-container">
+      <div class="heading"> NC_004663 - Region 11 - NADH_dehydrogenase_I <div class="help-container"> <div class="help-icon" data-id="region_svg-help-21"></div> <span class="help-tooltip" id="region_svg-help-21">Shows the layout of the region, marking coding sequences and areas of interest. Clicking a gene will select it and show any relevant details. Clicking an area feature (e.g. a candidate cluster) will select all coding sequences within that area. Double clicking an area feature will zoom to that area. Multiple genes and area features can be selected by clicking them while holding the Ctrl key.</span></div></div>
+      <div class="region-download">
+        <a href = NC_004663.1.region011.gbk>Download region GenBank file</a>
+      </div>
+      <div class = 'description-text'>
+        Location: 5,280,993 - 5,311,226 nt. (total: 30,234 nt)
+        
+        <a class="cluster-rules-header" id="r1c11-rules-header" href="#r1c11">Show pHMM detection rules used</a>
+        
+        
+      </div>
+      
+      <div class="cluster-rules" id="r1c11-rules">NADH_dehydrogenase_I: (Oxidored_q4 and Oxidored_q6 and Complex1_30kDa and Complex1_49kDa and NADHdh and Oxidored_q3 and Oxidored_q2 and minimum(4, [Fe-2S_thioredx, Fer2_4, Fer4_7, Molybdop_Fe4S4, Molydop_binding, NADH-G_4Fe-4S_3, NADH_4Fe-4S, Proton_antipo_M, Proton_antipo_N, SLBB]))</div>
+      
+      <div class="region-svg-container">
+       <div id='r1c11-svg'>
+       </div>
+      </div>
+    </div>
+    <div class="legend">
+      <h4>Legend:</h4>
+      <div class="legend-items">
+        <div class="button-like legend-selector" data-id="legend-type-biosynthetic">
+      <div class="legend-field legend-type-biosynthetic"></div>
+      <div class="legend-label">core biosynthetic genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-biosynthetic-additional">
+      <div class="legend-field legend-type-biosynthetic-additional"></div>
+      <div class="legend-label">additional biosynthetic genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-transport">
+      <div class="legend-field legend-type-transport"></div>
+      <div class="legend-label">transport-related genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-regulatory">
+      <div class="legend-field legend-type-regulatory"></div>
+      <div class="legend-label">regulatory genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-resistance">
+      <div class="legend-field legend-type-resistance"></div>
+      <div class="legend-label">resistance genes</div>
+    </div>
+	<div class="button-like legend-selector" data-id="legend-type-encapsulation">
+      <div class="legend-field legend-type-encapsulation"></div>
+      <div class="legend-label">encapsulation genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-electron_transport">
+      <div class="legend-field legend-type-electron_transport"></div>
+      <div class="legend-label">electron transport genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-other">
+      <div class="legend-field legend-type-other"></div>
+      <div class="legend-label">other genes</div>
+    </div>
+        
+        
+        
+      </div>
+    </div>
+    <div class="zoom-buttons">
+      <div class="button-like zoom-button zoom-reset"><img src="images/expand-arrows-alt-solid.svg" alt="reset zoom">reset view</div>
+      <div class="button-like zoom-button zoom-in"><img src="images/search-solid.svg" alt="zoom">zoom to selection</div>
+    </div>
+  </div>
+
+  <div class="focus-panel">
+    <div class="heading">
+      <span>Gene details</span>
+      <div class="help-container"> <div class="help-icon" data-id="focus-panel-help-22"></div> <span class="help-tooltip" id="focus-panel-help-22">Shows details of the most recently selected gene, including names, products, location, and other annotations.</span></div>
+    </div>
+    <div class="focus-panel-content focus-panel-content-r1c11">
+        <div style="text-align: center; margin-top: 30%;">
+            Select a gene to view the details available for it
+        </div>
+    </div>
+  </div>
+
+  
+  <div class="body-details">
+    <div class="body-details-headers">
+    
+    </div>
+    
+  </div>
+
+  <div class="sidepanel">
+    <div class="sidepanel-details-headers">
+    
+    </div>
+    
+  </div>
+
+ </div>
+
+</div>
+
+<div class="page" id='r1c12' style="display: none;">
+ <div class="region-grid">
+  <div class = "content">
+    <div class ="description-container">
+      <div class="heading"> NC_004663 - Region 12 - TPP_fatty_acids <div class="help-container"> <div class="help-icon" data-id="region_svg-help-23"></div> <span class="help-tooltip" id="region_svg-help-23">Shows the layout of the region, marking coding sequences and areas of interest. Clicking a gene will select it and show any relevant details. Clicking an area feature (e.g. a candidate cluster) will select all coding sequences within that area. Double clicking an area feature will zoom to that area. Multiple genes and area features can be selected by clicking them while holding the Ctrl key.</span></div></div>
+      <div class="region-download">
+        <a href = NC_004663.1.region012.gbk>Download region GenBank file</a>
+      </div>
+      <div class = 'description-text'>
+        Location: 6,157,989 - 6,182,845 nt. (total: 24,857 nt)
+        
+        <a class="cluster-rules-header" id="r1c12-rules-header" href="#r1c12">Show pHMM detection rules used</a>
+        
+        
+      </div>
+      
+      <div class="cluster-rules" id="r1c12-rules">TPP_fatty_acids: (TPP_enzyme_C and (minimum(2, [ACD1_car, ACP_syn_III_C, AcetylCoA_hyd_C, AcetylCoA_hydro, Acyl-CoA_dh_1, Acyl-CoA_dh_2, Butyrate_kinase, CT_Propionyl_CoA1, CT_Propionyl_CoA2, CT_Propionyl_CoA3, Carboxyl_trans, CoA_trans, CoA_trans_230_acto, CoA_trans_2_CAF, CoA_trans_6_Glutaconate, E1_dh, ECH_1, ECH_2, HBT, HBT_2, HCDH, HpaB, Ketoacyl-synt_C, Thiolase_C, Thiolase_N, adh_short, adh_short_C2]) or FA_synthesis) and not (PFL-like or PFL_6_pcresol or PFL_9_tma or Gly_radical or Gly_430_pcre or PFL_acetate1 or PFL_acetate2 or Gly_radical_scatole or PFL_proline or PFL_toluene) and not (POR or POR_N))</div>
+      
+      <div class="region-svg-container">
+       <div id='r1c12-svg'>
+       </div>
+      </div>
+    </div>
+    <div class="legend">
+      <h4>Legend:</h4>
+      <div class="legend-items">
+        <div class="button-like legend-selector" data-id="legend-type-biosynthetic">
+      <div class="legend-field legend-type-biosynthetic"></div>
+      <div class="legend-label">core biosynthetic genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-biosynthetic-additional">
+      <div class="legend-field legend-type-biosynthetic-additional"></div>
+      <div class="legend-label">additional biosynthetic genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-transport">
+      <div class="legend-field legend-type-transport"></div>
+      <div class="legend-label">transport-related genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-regulatory">
+      <div class="legend-field legend-type-regulatory"></div>
+      <div class="legend-label">regulatory genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-resistance">
+      <div class="legend-field legend-type-resistance"></div>
+      <div class="legend-label">resistance genes</div>
+    </div>
+	<div class="button-like legend-selector" data-id="legend-type-encapsulation">
+      <div class="legend-field legend-type-encapsulation"></div>
+      <div class="legend-label">encapsulation genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-electron_transport">
+      <div class="legend-field legend-type-electron_transport"></div>
+      <div class="legend-label">electron transport genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-other">
+      <div class="legend-field legend-type-other"></div>
+      <div class="legend-label">other genes</div>
+    </div>
+        
+        
+        
+      </div>
+    </div>
+    <div class="zoom-buttons">
+      <div class="button-like zoom-button zoom-reset"><img src="images/expand-arrows-alt-solid.svg" alt="reset zoom">reset view</div>
+      <div class="button-like zoom-button zoom-in"><img src="images/search-solid.svg" alt="zoom">zoom to selection</div>
+    </div>
+  </div>
+
+  <div class="focus-panel">
+    <div class="heading">
+      <span>Gene details</span>
+      <div class="help-container"> <div class="help-icon" data-id="focus-panel-help-24"></div> <span class="help-tooltip" id="focus-panel-help-24">Shows details of the most recently selected gene, including names, products, location, and other annotations.</span></div>
+    </div>
+    <div class="focus-panel-content focus-panel-content-r1c12">
+        <div style="text-align: center; margin-top: 30%;">
+            Select a gene to view the details available for it
+        </div>
+    </div>
+  </div>
+
+  
+  <div class="body-details">
+    <div class="body-details-headers">
+    
+    </div>
+    
+  </div>
+
+  <div class="sidepanel">
+    <div class="sidepanel-details-headers">
+    
+    </div>
+    
+  </div>
+
+ </div>
+
+</div>
+
+<div class="page" id='r1c13' style="display: none;">
+ <div class="region-grid">
+  <div class = "content">
+    <div class ="description-container">
+      <div class="heading"> NC_004663 - Region 13 - Pyruvate2acetate-formate <div class="help-container"> <div class="help-icon" data-id="region_svg-help-25"></div> <span class="help-tooltip" id="region_svg-help-25">Shows the layout of the region, marking coding sequences and areas of interest. Clicking a gene will select it and show any relevant details. Clicking an area feature (e.g. a candidate cluster) will select all coding sequences within that area. Double clicking an area feature will zoom to that area. Multiple genes and area features can be selected by clicking them while holding the Ctrl key.</span></div></div>
+      <div class="region-download">
+        <a href = NC_004663.1.region013.gbk>Download region GenBank file</a>
+      </div>
+      <div class = 'description-text'>
+        Location: 6,203,943 - 6,226,913 nt. (total: 22,971 nt)
+        
+        <a class="cluster-rules-header" id="r1c13-rules-header" href="#r1c13">Show pHMM detection rules used</a>
+        
+        
+      </div>
+      
+      <div class="cluster-rules" id="r1c13-rules">Pyruvate2acetate-formate: ((PFL_acetate1 or PFL_acetate2) and Radical_SAM)</div>
+      
+      <div class="region-svg-container">
+       <div id='r1c13-svg'>
+       </div>
+      </div>
+    </div>
+    <div class="legend">
+      <h4>Legend:</h4>
+      <div class="legend-items">
+        <div class="button-like legend-selector" data-id="legend-type-biosynthetic">
+      <div class="legend-field legend-type-biosynthetic"></div>
+      <div class="legend-label">core biosynthetic genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-biosynthetic-additional">
+      <div class="legend-field legend-type-biosynthetic-additional"></div>
+      <div class="legend-label">additional biosynthetic genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-transport">
+      <div class="legend-field legend-type-transport"></div>
+      <div class="legend-label">transport-related genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-regulatory">
+      <div class="legend-field legend-type-regulatory"></div>
+      <div class="legend-label">regulatory genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-resistance">
+      <div class="legend-field legend-type-resistance"></div>
+      <div class="legend-label">resistance genes</div>
+    </div>
+	<div class="button-like legend-selector" data-id="legend-type-encapsulation">
+      <div class="legend-field legend-type-encapsulation"></div>
+      <div class="legend-label">encapsulation genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-electron_transport">
+      <div class="legend-field legend-type-electron_transport"></div>
+      <div class="legend-label">electron transport genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-other">
+      <div class="legend-field legend-type-other"></div>
+      <div class="legend-label">other genes</div>
+    </div>
+        
+        
+        
+      </div>
+    </div>
+    <div class="zoom-buttons">
+      <div class="button-like zoom-button zoom-reset"><img src="images/expand-arrows-alt-solid.svg" alt="reset zoom">reset view</div>
+      <div class="button-like zoom-button zoom-in"><img src="images/search-solid.svg" alt="zoom">zoom to selection</div>
+    </div>
+  </div>
+
+  <div class="focus-panel">
+    <div class="heading">
+      <span>Gene details</span>
+      <div class="help-container"> <div class="help-icon" data-id="focus-panel-help-26"></div> <span class="help-tooltip" id="focus-panel-help-26">Shows details of the most recently selected gene, including names, products, location, and other annotations.</span></div>
+    </div>
+    <div class="focus-panel-content focus-panel-content-r1c13">
+        <div style="text-align: center; margin-top: 30%;">
+            Select a gene to view the details available for it
+        </div>
+    </div>
+  </div>
+
+  
+  <div class="body-details">
+    <div class="body-details-headers">
+    
+    </div>
+    
+  </div>
+
+  <div class="sidepanel">
+    <div class="sidepanel-details-headers">
+    
+    </div>
+    
+  </div>
+
+ </div>
+
+</div>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div>
+        <img src="images/bacteria_antismash_logo.svg" style="height:90px;width:unset;">
+      </div>
+      <div class="cite-me">
+        If you have found gutSMASH useful, please <a href="https://www.biorxiv.org/content/10.1101/2021.02.25.432841v1">cite us</a>.
+      </div>
+      <div>
+        <img src="images/bacteria_antismash_icon.svg" style="height:100px;width:unset;">
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/jquery.js"></script>
+  <script src="js/antismash.js"></script>
+  <script src="regions.js"></script>
+  <script>
+    $(document).ready(function() {
+        viewer["start"](all_regions, details_data, recordData);
+    })
+  </script>
+
+</body>
+</html>
