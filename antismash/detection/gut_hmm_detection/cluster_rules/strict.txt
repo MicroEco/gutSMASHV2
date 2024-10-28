@@ -291,47 +291,23 @@ RULE putative_2-oxoglutarate_ferredoxin_oxidoreductase
     NEIGHBOURHOOD 10
     CONDITIONS cds(POR_N and POR and PFOR_II) and TPP_enzyme_C and not cds(POR_N and TPP_enzyme_C and POR)
 
-RULE APS_kinase
-    COMMENT Catalyze the phosphrylation of APS to PAPS
-    CUTOFF 3
+RULE Sulfate2PAPS
+    COMMENT  Forms activated sulfate
+    CUTOFF 4
     NEIGHBOURHOOD 10
-    CONDITIONS APS_kinase
+    CONDITIONS PAPS_reduct and GTP_EFTU and APS_kinase #specific cysN.hmm has been built, but GTP_EFTU works too. Replace with cysN if necessary.
 
-RULE Sulfate_adenylyltransferase
-    COMMENT  Forms adenosine 5phosphosulphate (APS) from ATP and sulfate
-    CUTOFF 3
-    NEIGHBOURHOOD 10
-    CONDITIONS PAPS_reduct and GTP_EFTU #specific cysN.hmm has been built, but GTP_EFTU works too. Replace with cysN if necessary.
-
-RULE PAPS_reductase
-    COMMENT  Reduce PAPS to sulfite, using thioredoxin as electron donor
-    CUTOFF 2
-    NEIGHBOURHOOD 10
-    CONDITIONS cds(PAPS_reduct and not DUF3440) and not minimum(2, [PAPS_reduct,cysN,GTP_EFTU])
-
-RULE Sulfite_reductase
-    COMMENT  Reduce sulfite to sulfide. NADPH dependent electron transfer.
+RULE PAPS2sulfide
+    COMMENT  Reduce PAPS to sulfide with sulfite as the intermediate
     CUTOFF 10
     NEIGHBOURHOOD 10
-    CONDITIONS cds(NIR_SIR_ferr and NIR_SIR) and minimum(2, [NAD_binding_1, Flavodoxin_1, FAD_binding_1])
+    CONDITIONS cds(NIR_SIR_ferr and NIR_SIR) and minimum(2, [NAD_binding_1, Flavodoxin_1, FAD_binding_1]) and cds(PAPS_reduct and not DUF3440) and not minimum(2, [PAPS_reduct,cysN,GTP_EFTU])
 
 RULE ButyrylCoA2butyrate
     COMMENT Catalyze the Butyryl-CoA to butyrate, terminal step of acetate to butyrate pathway
     CUTOFF 10
     NEIGHBOURHOOD 10
     CONDITIONS PTA_PTB and Acetate_kinase
-
-RULE acetoacetate2butyrate
-    COMMENT butyryl-CoA:acetoacetate CoA transferase
-    CUTOFF 4
-    NEIGHBOURHOOD 10
-    CONDITIONS minimum(2,[CoA_trans])
-
-RULE acetate2butyrate_but
-    COMMENT butyryl-CoA:acetate CoA-transferase
-    CUTOFF 10
-    NEIGHBOURHOOD 10
-    CONDITIONS cds(AcetylCoA_hydro and AcetylCoA_hyd_C)
 
 RULE r-butyrobetaine2TMA
     COMMENT import r-butyrobetaine and degrade to TMA
@@ -341,15 +317,18 @@ RULE r-butyrobetaine2TMA
 
 RULE taurine2sulfite
     COMMENT Catalyzes the alpha-ketoglutarate-dependent hydroxylation of taurine yielding sulfite and aminoacetaldehyde
-    CUTOFF 6
+    CUTOFF 5
     NEIGHBOURHOOD 10
     CONDITIONS OpuAC and ABC_tran and BPD_transp_1 and TauD
 
 RULE Alkanesulfonate2sulfite
     COMMENT Catalyzes the conversion of pentanesulfonate to sulfite and pentaldehyde
-    CUTOFF 7
+    CUTOFF 4
     NEIGHBOURHOOD 10
     CONDITIONS FMN_red and Bac_luciferase and ABC_tran and NMT1 and BPD_transp_1
 
-
-
+RULE sulfoquinovose-EMP_pathway
+    COMMENT Catalyzes the conversion of sulfoquinovose to sulphonate
+    CUTOFF 10
+    NEIGHBOURHOOD 10
+    CONDITIONS PfkB and GlcNAc_2-epim and minimum(2,[Aldose_epim,Glyco_hydro_31_2nd,MFS_2,NAD_binding_2])
