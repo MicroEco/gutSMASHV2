@@ -325,10 +325,28 @@ RULE Alkanesulfonate2sulfite
     COMMENT Catalyzes the conversion of pentanesulfonate to sulfite and pentaldehyde
     CUTOFF 4
     NEIGHBOURHOOD 10
-    CONDITIONS FMN_red and Bac_luciferase and ABC_tran and NMT1 and BPD_transp_1
+    CONDITIONS FMN_red and Bac_luciferase and ABC_tran and NMT1 and BPD_transp_1 #NMT1 score 40
 
 RULE sulfoquinovose-EMP_pathway
     COMMENT Catalyzes the conversion of sulfoquinovose to sulphonate
     CUTOFF 10
     NEIGHBOURHOOD 10
-    CONDITIONS PfkB and GlcNAc_2-epim and minimum(2,[Aldose_epim,Glyco_hydro_31_2nd,MFS_2,NAD_binding_2])
+    CONDITIONS PfkB and DeoC and GlcNAc_2-epim and minimum(2,[Aldose_epim,Glyco_hydro_31_2nd,MFS_2,NAD_binding_2])
+
+RULE sulfoquinovose-ED_pathway
+    COMMENT Catalyzes the conversion of sulfoquinovose to 3-sulfolactate
+    CUTOFF 15
+    NEIGHBOURHOOD 10
+    CONDITIONS Aldedh and SGL and HpcH_HpaI and ILVD_EDD and minimum(1,[TauE,Glyco_hydro_31_2nd,adh_short_C2])
+
+RULE xanthine_dehydrogenase
+    COMMENT purine metabolism, xanthine to uric acid.
+    CUTOFF 10
+    NEIGHBOURHOOD 10
+    CONDITIONS cds(Fer2 and Fer2_2) and cds(Ald_Xan_dh_C and MoCoBD_1 and MoCoBD_2) and FAD_binding_5
+
+RULE uric_acid2SCFA
+    COMMENT purine metabolism, xanthine to uric acid.
+    CUTOFF 11
+    NEIGHBOURHOOD 14
+    CONDITIONS PALP and Amidohydro_1 and Peptidase_M20 and minimum(2,[Xan_ur_permease,Ald_Xan_dh_C,Fer4_20,Pyr_redox_2,Peptidase_M20]) and not FAD_binding_5
