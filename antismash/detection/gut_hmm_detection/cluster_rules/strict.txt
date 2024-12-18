@@ -273,12 +273,6 @@ RULE Anaerobic_sulfite_redutase
     NEIGHBOURHOOD 10
     CONDITIONS Fer4_22 and cds(DHODB_Fe-S_bind and NAD_binding_1) and cds(NIR_SIR and NIR_SIR_ferr)
 
-RULE Adenylylsulfate_reductase
-    COMMENT  Reduce adenylyl-sulfate, adenosine5phosphosulfate (APS) to sulfite
-    CUTOFF 1
-    NEIGHBOURHOOD 10
-    CONDITIONS FAD_binding_2 and Fer4_9
-
 RULE Phenylpyruvate_ferredoxin_oxidoreductase
     COMMENT Phenylpyruvate to phenylacetic acid anaerobic reaction
     CUTOFF 10
